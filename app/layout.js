@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       >
          <div className="min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 p-4">
         {children}
+        <Analytics/>
         </div>
       </body>
     </html>
